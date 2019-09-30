@@ -1,66 +1,77 @@
-#container{
+.container{
+  margin: auto;
+  width: 90%;
+}
 
-  height: 300px;
+.container2{
+  flex-basis: 70%;
+}
+
+.container, .container2{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .element{
-  display: inline-block;
-  float: left;
+  flex-basis: 0;
+  height: 100px;
+}
+
+.element2{
+  height: 50px;
 }
 
 .element:nth-child(1){
-    background-color: #008000;
-    height: 15%;
-    width: 80%;
-  }
+  background-color: #008000;
+  flex-basis: 90%;
+}
 
 .element:nth-child(2){
-    background-color: #0000FF;
-    height: 15%;
-    width: 20%;
-  }
+  background-color: #0000FF;
+  flex-basis: 10%;
+}
 
 .element:nth-child(3){
-    background-color: #FF0000;
-    height: 40%;
-    width: 20%;
-  }
+  background-color: #FF0000;
+  flex-basis: 40%;
+}
+
+.element2:nth-child(1){
+  background-color: #FFA500;
+  flex-basis: 50%;
+
+}
+
+.element2:nth-child(2){
+  background-color: #808080;
+
+  flex-basis: 50%;
+}
+
+.element2:nth-child(3){
+  background-color: #FF8C00;
+  flex-basis: 33%;
+
+}
+
+.element2:nth-child(4){
+  background-color: #008080;
+  flex-basis: 34%;
+}
+
+.element2:nth-child(5){
+  background-color: #FF4500;
+  flex-basis: 33%;
+}
 
 .element:nth-child(4){
-    background-color: #FFA500;
-
-    height: 20%;
-    width: 40%;
-  }
+  background-color: #2F4F4F;
+  flex-basis: 60%;
+}
 
 .element:nth-child(5){
-    background-color: #808080;
-
-    height: 20%;
-    width: 40%;
-  }
-
-.element:nth-child(6){
-    background-color: #FF8C00;
-    height: 20%;
-    width: 30%;
-
-  }
-
-.element:nth-child(7){
-    background-color: #008080;
-    height: 20%;
-    width: 25%;
-  }
-
-.element:nth-child(8){
-    background-color: #FF4500;
-    height: 20%;
-    width: 25%;
-  }
-
-.element:nth-child(9){
-    background-color: #2F4F4F;
-    height: 45%;
-    width: 100%;
-  }
+  background-color: #2F4F4F;
+  flex-basis: 100%;
+}
